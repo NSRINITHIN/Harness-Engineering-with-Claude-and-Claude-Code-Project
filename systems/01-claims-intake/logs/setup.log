@@ -1,0 +1,2 @@
+/voc/work/py3.13-exercises-and-project/Project-Harness Engineering with Claude and Claude Code/systems/01-claims-intake/setup.sh: line 26: python3.13: command not found
+Error: Command '['/voc/work/py3.13-exercises-and-project/Build a Claims Intake Agent with a stop_reason-Driven Loop/exercises/03-dynamic-decomposition/solution/.venv/bin/python3', '-m', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.

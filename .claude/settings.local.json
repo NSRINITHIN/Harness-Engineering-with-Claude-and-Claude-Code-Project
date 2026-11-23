@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(chmod +x systems/*/setup.sh systems/*/run.sh)",
+      "Bash(ls -lh systems/*/setup.sh systems/*/run.sh)",
+      "Bash(chmod +x \"/voc/work/py3.13-exercises-and-project/Project-Harness Engineering with Claude and Claude Code/build-all-systems.sh\")",
+      "Bash(bash \"/voc/work/py3.13-exercises-and-project/Project-Harness Engineering with Claude and Claude Code/systems/01-claims-intake/setup.sh\")",
+      "Bash(python3 -m venv .venv --upgrade-deps)",
+      "Bash(.venv/bin/python3)",
+      "Bash(.venv/bin/pip install --upgrade pip setuptools wheel)",
+      "Bash(.venv/bin/pip install -e .[dev])",
+      "Bash(.venv/bin/pytest tests/ -v)"
+    ]
+  }
+}
