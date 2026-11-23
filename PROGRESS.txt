@@ -1,0 +1,197 @@
+================================================================================
+HARNESS ENGINEERING CAPSTONE - BUILD PROGRESS
+================================================================================
+
+PROJECT STATUS: ACTIVE BUILD IN PROGRESS
+
+Timestamp: 2026-11-23 10:00+ UTC
+Duration: ~5 minutes elapsed
+
+================================================================================
+COMPLETED TASKS
+================================================================================
+
+✅ PROJECT STRUCTURE
+   - Created systems/ directory with subdirectories for all 4 systems
+   - Created evidence/ directory to capture test outputs and run artifacts
+   - Created reflection/ directory for analysis briefs
+   - All directories have proper .gitignore entries
+
+✅ COMPREHENSIVE DOCUMENTATION (6 files, 1500+ lines)
+   - SETUP.md: Quick reference guide (92 lines)
+   - PROJECT_GUIDE.md: Detailed system guide (400+ lines)
+   - INDEX.md: Navigation and checklist (180 lines)
+   - STATUS.md: Progress tracking and troubleshooting (200+ lines)
+   - ANALYSIS_TEMPLATE.md: Evidence extraction framework (500+ lines)
+   - RUBRIC_DEEP_DIVE.md: What each criterion requires (600+ lines)
+   - QUICK_START.md: 5-minute overview (150 lines)
+
+✅ AUTOMATION SCRIPTS
+   - setup_all_systems.py: Master setup script with pip bootstrapping
+   - systems/01-claims-intake/setup.sh & run.sh
+   - systems/02-retail-context/setup.sh & run.sh
+   - systems/03-ecommerce-config/setup.sh & run.sh
+   - systems/04-shift-monitor/setup.sh & run.sh
+
+================================================================================
+IN-PROGRESS TASKS
+================================================================================
+
+🔄 SYSTEM INSTALLATIONS (Running now)
+
+   System 1: Claims Intake Agent
+   ✓ Virtual environment created
+   ✓ Dependencies installing (pip, setuptools, wheel)
+   ✓ anthropic==0.39.0 and dev tools (pytest, mypy, ruff)
+   STATUS: Dependencies installed, moving to System 2
+   
+   System 2: Retail Support Context Strategy
+   🔄 Currently installing (anthropic==0.69.0 expected)
+   
+   System 3: E-Commerce Team Claude Code Config
+   ⏳ Queued for setup
+   
+   System 4: Multi-Shift Quality Monitoring
+   ⏳ Queued for setup
+
+CURRENT OUTPUT:
+   Location: /tmp/claude/.../tasks/baaf38b.output
+   Line count: ~150 lines
+   Process ID: 7138
+
+================================================================================
+WHAT WILL HAPPEN NEXT (Automatic)
+================================================================================
+
+For each system (1-4):
+   1. Create virtual environment
+   2. Bootstrap pip with get-pip.py
+   3. Install dependencies from pyproject.toml
+   4. Run pytest tests/ -v
+   5. Collect test output to evidence/system-N/test_output_*.log
+   6. Run system end-to-end (python -m claims_intake.run --all, etc.)
+   7. Collect run artifacts to evidence/system-N/
+
+Expected artifacts per system:
+   - test_output_*.log (pytest results)
+   - run_output_*.log (execution log)
+   - system-specific outputs:
+     * System 1: summary.md, traces/*.jsonl, queues/*.jsonl
+     * System 2: budget.json, context.md, eval*.jsonl
+     * System 3: .claude/ directory, validator output
+     * System 4: hot_state.json, shift_scratchpad.jsonl
+
+Total test execution: 127 tests (29 + 30 + 35 + 33)
+Estimated completion: 20-40 minutes total
+
+================================================================================
+FILES READY FOR YOUR ANALYSIS
+================================================================================
+
+After setup completes, you will have:
+
+EVIDENCE DIRECTORY:
+   evidence/
+   ├── system-1/
+   │   ├── test_output_*.log          [29 passed tests]
+   │   ├── run_output_*.log           [execution log]
+   │   ├── summary_*.md               [claim outcomes]
+   │   ├── sample_trace_*.jsonl       [turn-by-turn execution]
+   │   └── latest_run_*/              [full run artifacts]
+   ├── system-2/
+   │   ├── test_output_*.log          [30 passed tests]
+   │   ├── budget_*.json              [token accounting]
+   │   ├── context_*.md               [assembled context]
+   │   ├── eval_*.jsonl               [evaluation results]
+   │   └── eval_control_*.jsonl       [control variant]
+   ├── system-3/
+   │   ├── test_output_*.log          [35 passed tests]
+   │   ├── validator_output_*.log     [must print "OK"]
+   │   ├── CLAUDE_*.md                [main configuration]
+   │   └── .claude_*/                 [config directory]
+   └── system-4/
+       ├── test_output_*.log          [33 passed tests]
+       ├── run_output_*.log           [shift execution]
+       ├── hot_state_*.json           [state file]
+       ├── hot_state_size_*.txt       [must be <5KB]
+       └── shift_scratchpad_*.jsonl   [decision log]
+
+DOCUMENTATION FOR ANALYSIS:
+   ├── ANALYSIS_TEMPLATE.md           [systematic extraction guide]
+   ├── RUBRIC_DEEP_DIVE.md            [what each citation should contain]
+   ├── PROJECT_GUIDE.md               [deep system explanations]
+   └── reflection-brief-template.md   [prompts to answer]
+
+================================================================================
+NEXT ACTIONS (For you, after setup)
+================================================================================
+
+1. VERIFY TESTS (5 minutes)
+   Run: grep "passed" evidence/*/test_output*.log
+   Expected: 29 + 30 + 35 + 33 = 127 total
+
+2. EXTRACT EVIDENCE (1 hour)
+   Use: ANALYSIS_TEMPLATE.md
+   Extract: test counts, token counts, file paths, metrics
+
+3. ANALYZE PATTERNS (1-2 hours)
+   Use: RUBRIC_DEEP_DIVE.md
+   Identify: three layers, deterministic/prompt examples, cross-system patterns
+
+4. WRITE REFLECTION BRIEF (2-3 hours)
+   Edit: reflection-brief-template.md
+   Cite: specific evidence for every answer
+
+5. SUBMIT (Bundle all evidence + reflection brief)
+   Package: evidence/ folder + reflection-brief.md
+
+Total time to submission: 6-8 hours from setup completion
+
+================================================================================
+CRITICAL SUCCESS FACTORS
+================================================================================
+
+✓ All 127 tests MUST pass
+✓ Every answer MUST cite specific artifacts
+✓ File paths must be exact (evidence/system-N/...)
+✓ Token counts must come from budget.json, not estimates
+✓ Line numbers must be specific when citing code
+✓ Cross-system patterns must show how layers interact
+
+================================================================================
+MONITORING
+================================================================================
+
+Setup is running in background. To check progress:
+
+   tail -f /tmp/claude/.../tasks/baaf38b.output
+
+To check completion:
+
+   ls -lh evidence/*/test_output*.log | wc -l
+   (Should show 4 files when complete)
+
+   grep "passed" evidence/*/test_output*.log
+   (Should show 29, 30, 35, 33 respectively)
+
+================================================================================
+DOCUMENTATION AVAILABLE NOW
+================================================================================
+
+✓ QUICK_START.md        - 5 min overview
+✓ INDEX.md              - Navigation & checklist
+✓ SETUP.md              - Setup instructions
+✓ PROJECT_GUIDE.md      - Detailed explanations
+✓ ANALYSIS_TEMPLATE.md  - Evidence extraction
+✓ RUBRIC_DEEP_DIVE.md   - Citation requirements
+
+Recommend reading in this order:
+1. QUICK_START.md (5 min)
+2. INDEX.md (5 min)
+3. Wait for setup to complete (20-30 min)
+4. Use ANALYSIS_TEMPLATE.md to extract evidence
+5. Use RUBRIC_DEEP_DIVE.md to understand citations
+
+================================================================================
+END PROGRESS REPORT
+================================================================================

@@ -1,0 +1,30 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE & system files
+.claude/
+.vscode/
+.idea/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Build artifacts
+*.pyc
+.pytest_cache/
+
+# Temporary
+*.tmp
+*.log
+
+# Systems folder
+systems/
+
+# Keep these
+!evidence/
+!*.md
