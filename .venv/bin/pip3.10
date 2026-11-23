@@ -1,8 +1,0 @@
-#!/bin/sh
-'''exec' "/voc/work/py3.13-exercises-and-project/Project-Harness Engineering with Claude and Claude Code/.venv/bin/python3" "$0" "$@"
-' '''
-import sys
-from pip._internal.cli.main import cli
-if __name__ == '__main__':
-    sys.argv[0] = sys.argv[0].removesuffix('.exe')
-    sys.exit(cli())

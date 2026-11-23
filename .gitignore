@@ -1,3 +1,11 @@
+# Virtual environments - don't commit
+.venv/
+venv/
+env/
+
+# System setup folders - don't commit
+systems/
+
 # IDE & system files
 .vscode/
 .idea/
@@ -6,11 +14,13 @@
 *~
 .DS_Store
 
-# Local environment (but keep .claude)
+# Local environment
 .env
 .env.local
 
 # Temporary files
 *.tmp
 
-# Keep everything else - including .venv, systems, evidence, etc.
+# Keep everything else
+!evidence/
+!*.md
